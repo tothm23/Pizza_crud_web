@@ -6,6 +6,13 @@
       "diameter": 32,
       "price": 3000,
       "payment": "Cash"
+    },
+    {
+      "id": 3,
+      "name": "Magyaros",
+      "diameter": "38",
+      "price": "3500",
+      "payment": "Credit Card"
     }
   ]
 }

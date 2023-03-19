@@ -4,22 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Pizza - CRUD</title>
   </head>
   <body>
-    <table>
-      <thead>
-        <tr>
-          <td>ID</td>
-          <td>Name</td>
-          <td>Diameter (cm)</td>
-          <td>Price (Ft)</td>
-          <td>Payment</td>
-        </tr>
-      </thead>
-      <tbody id="tbody">
-        <!--
+    <div class="container mt-5 bg-light rounded-3">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col" class="fw-bold">ID</th>
+            <th scope="col" class="fw-bold">Name</th>
+            <th scope="col" class="fw-bold">Diameter (cm)</th>
+            <th scope="col" class="fw-bold">Price (Ft)</th>
+            <th scope="col" class="fw-bold">Payment</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <!--
           <tr>
             <td>1</td>
             <td>Cheesy</td>
@@ -27,23 +29,45 @@
             <td>3000 Ft</td>
             <td>Cash</td>  
           <!tr>
-        -->
-      </tbody>
-    </table>
+        --></tbody>
+      </table>
+    </div>
+    <div class="container mt-5">
+      <form class="w-50 m-auto d-flex flex-column bg-light rounded-3 p-3">
+        <div class="form-group mb-2">
+          <label for="idInput" class="form-label">ID</label>
+          <input class="form-control" id="idInput" type="number" placeholder="Enter ID" />
+        </div>
 
-    <form>
-      <input id="idInput" type="number" placeholder="Enter ID" /><br />
-      <input id="nameInput" type="text" placeholder="Enter Name" /><br />
-      <input id="diameterInput" type="number" placeholder="Enter Diameter (cm)" /><br />
-      <input id="priceInput" type="number" placeholder="Enter Price (Ft)" /><br />
-      <select id="paymentInput">
-        <option value="">Payment</option>
-        <option value="1">Credit Card</option>
-        <option value="2">Cash</option></select
-      ><br />
-      <input type="button" id="createUpdate" value="Create/Update" />
-      <input type="button" id="deleteData" value="Delete" />
-    </form>
+        <div class="form-group mb-2">
+          <label for="nameInput" class="form-label">Name</label>
+          <input class="form-control" id="nameInput" type="text" placeholder="Enter Name" />
+        </div>
+
+        <div class="form-group mb-2">
+          <label for="diameterInput" class="form-label">Diameter</label>
+          <input class="form-control" id="diameterInput" type="number" placeholder="Enter Diameter (cm)" />
+        </div>
+
+        <div class="form-group mb-2">
+          <label for="priceInput" class="form-label">Price</label>
+          <input class="form-control" id="priceInput" type="number" placeholder="Enter Price (Ft)" />
+        </div>
+
+        <select class="form-select mt-3 mb-5" id="paymentInput">
+          <option value="">Payment</option>
+          <option value="1">Credit Card</option>
+          <option value="2">Cash</option>
+        </select>
+
+        <div class="d-flex flex-wrap justify-content-center">
+          <input class="btn btn-success" type="button" id="createUpdate" value="Create/Update" />
+          <input class="btn btn-danger" type="button" id="deleteData" value="Delete" />
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
