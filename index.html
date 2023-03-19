@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pizza - CRUD</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>Name</td>
+          <td>Diameter (cm)</td>
+          <td>Price (Ft)</td>
+          <td>Payment</td>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <!--
+          <tr>
+            <td>1</td>
+            <td>Cheesy</td>
+            <td>32 cm</td>
+            <td>3000 Ft</td>
+            <td>Cash</td>  
+          <!tr>
+        -->
+      </tbody>
+    </table>
+
+    <form>
+      <input id="idInput" type="number" placeholder="Enter ID" /><br />
+      <input id="nameInput" type="text" placeholder="Enter Name" /><br />
+      <input id="diameterInput" type="number" placeholder="Enter Diameter (cm)" /><br />
+      <input id="priceInput" type="number" placeholder="Enter Price (Ft)" /><br />
+      <select id="paymentInput">
+        <option value="">Payment</option>
+        <option value="1">Credit Card</option>
+        <option value="2">Cash</option></select
+      ><br />
+      <input type="button" id="createUpdate" value="Create/Update" />
+      <input type="button" id="deleteData" value="Delete" />
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

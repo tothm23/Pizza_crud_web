@@ -1,0 +1,11 @@
+{
+  "pizza": [
+    {
+      "id": 1,
+      "name": "Cheesy",
+      "diameter": 32,
+      "price": 3000,
+      "payment": "Cash"
+    }
+  ]
+}
